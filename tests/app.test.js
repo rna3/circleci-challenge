@@ -16,6 +16,6 @@ describe("Button click test", () => {
   it("should display text when button is clicked", async () => {
     await page.click("#myButton");
     const message = await page.$eval("#message", el => el.textContent);
-    expect(message).toBe("Button clicked!");
+    expect(message).toBe("Hello from CircleCI!");
   });
 });
