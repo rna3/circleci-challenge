@@ -4,8 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "react-scripts start", 
     "test": "jest",
-    "start": "node server.js"
+    "test:ci": "start-server-and-test start http://localhost:3000 test"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "express": "^5.1.0",
     "jest": "^30.1.3",
     "jest-puppeteer": "^11.0.0",
-    "puppeteer": "^24.22.0"
+    "puppeteer": "^24.22.0",
+    "start-server-and-test": "^2.1.2"
   }
 }

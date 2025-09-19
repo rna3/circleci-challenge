@@ -12,7 +12,7 @@ jobs:
       - node/install-packages
       - run: 
           name: Run Jest Tests
-          command: npm test
+          command: npm run test:ci
 
 workflows:
   build-and-test:
