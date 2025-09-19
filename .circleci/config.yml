@@ -11,7 +11,7 @@ jobs:
       - checkout
       - node/install-packages
       - run: 
-        name: Run Jest Tests
+          name: Run Jest Tests
           command: npm test
 
 workflows:
