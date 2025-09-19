@@ -6,7 +6,7 @@ orbs:
 jobs:
   test:
     docker:
-      - image: cimg/node:20.0
+      - image: cimg/node:20.0-browsers   # includes Chrome + shared libs for Puppeteer
     steps:
       - checkout
 
@@ -19,12 +19,13 @@ jobs:
       - run:
           name: Run Jest + Puppeteer tests
           command: |
-            npx start-server-and-test "npm start" http://localhost:3000 "npm test:ci"
+            npx start-server-and-test "npm start" http://localhost:3000 "npm run test:ci"
 
 workflows:
   build-and-test:
     jobs:
       - test
+
 
 
 # # Use the latest 2.1 version of CircleCI pipeline process engine.
