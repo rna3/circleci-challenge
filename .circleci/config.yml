@@ -13,7 +13,7 @@ jobs:
       # Install all dependencies (including devDependencies) from package-lock.json
       - run:
           name: Install dependencies
-          command: npm ci
+          command: npm install
 
       # Start the dev server, wait for it to respond, then run tests
       - run:
