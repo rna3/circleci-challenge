@@ -6,7 +6,7 @@
   "scripts": {
     "start": "react-scripts start", 
     "test": "jest",
-    "test:ci": "start-server-and-test start http://localhost:3000 test"
+    "test:ci": "jest --runInBand"
   },
   "keywords": [],
   "author": "",
